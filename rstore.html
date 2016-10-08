@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+
+	<script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="jquery-ui.min.js"></script>
+	<script src="jquery.dataTables.min.js"></script>
+		<script src="ydndbsql.js"></script>
+	
+			<script src="ydn.db-isw-core-crypt-qry-dev.js"></script>
+				<script src="ydn.db-is-core-e-cur-dev.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="jquery-ui.min.js"></script>
+	
+	
+	
+	<link rel="stylesheet" type="text/css" href="dataTables.jqueryui.css">
+   
+<link rel="stylesheet" type="text/css" href="jquery.dataTables_themeroller.css">
+	
+	
+	<link rel="stylesheet" href="rstore.css">
+	
+	  
+	   
+	
+	
+		<script src="../remote/ydnfunction.js"></script>
+		<script type="text/javascript" src="aes.js"></script>
+              <script type="text/javascript" src="crypto.js"></script>
+              <script type="text/javascript" src="encrypt.js"></script>
+              <script type="text/javascript" src="decrypte.js"></script>
+		
+		
+		<script src="../remote/getDbConnection.js"></script>
+		<script src="../remote/datafolder.js"></script>
+	
+	<script src="remotestorage.js"></script>
+	<script src="remotestorage-module.js"></script>
+	
+	<script src="app.js"></script>
+	
+	
+	<title>My Contact List </title>
+	
+</head>
+<body>
+	<div id="remotestorage-connect"></div>
+
+	<h1 align = "center">My Contact List </h1>
+
+	<form id="add-drink">
+		<input type= "text" placeholder="add a name">
+			<input  type= "text" placeholder="add a address">
+				<input  type= "text" placeholder="add a mobile number">
+					<input  type= "text" placeholder="add an email address ">
+			<button type="submit">Add</button>
+			<input type = "button" class = "userbutton" value = "Display" onclick = "reloadTable()"></input>
+				<input type = "button" value = "Clear" class = "userbutton" onclick = "clearRemoteStorage()"></input>
+	
+	
+	
+	
+	</form>
+
+<table id="example" class="display" width="100%">
+
+</table>
+ 
+        	
+     <div id="editwindow" >
+        
+    <div id="editdiv"  >
+
+       
+       </div>
+    </div>   
+
+
+
+
+	<ul id="drink-list"></ul>
+
+</body>
+</html>
